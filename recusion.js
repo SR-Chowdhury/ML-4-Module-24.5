@@ -33,7 +33,7 @@ console.log(result);
  */
 
 /**
- * Basic Prime Number by Loop
+ * Basic Factorial Number by Loop
  */
 
 let n = 1;
@@ -43,15 +43,15 @@ for (let i = 1; i<=5; i++) {
 console.log("5! = "+ n);
 
 /**
- * Basic Prime Number by recursive function
+ * Basic Factorial Number by recursive function
  */
 
-function primeNumber(p) {
+function factorialNumber(p) {
     if (p == 1) {
         return 1;
     }
-    return p * primeNumber(p - 1);
+    return p * factorialNumber(p - 1);
 }
 
-let prime = primeNumber(5);
-console.log(prime);
+let factorial = factorialNumber(5);
+console.log(factorial);
